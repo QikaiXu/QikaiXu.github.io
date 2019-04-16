@@ -2,8 +2,10 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="zh-Hans">
+
+<html class="theme-next mist use-motion" lang>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hexo,">
 
 
 
@@ -92,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="MY BLOG">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1123123 12var a = [1, 2, 3];a.forEach(b =&amp;gt; console.log(b));">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-笔记">
+<meta property="og:url" content="http://yoursite.com/2019/04/16/hexo-笔记/index.html">
 <meta property="og:site_name" content="MY BLOG">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="1123123 12var a = [1, 2, 3];a.forEach(b =&amp;gt; console.log(b));">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-16T10:36:54.220Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MY BLOG">
+<meta name="twitter:title" content="hexo-笔记">
+<meta name="twitter:description" content="1123123 12var a = [1, 2, 3];a.forEach(b =&amp;gt; console.log(b));">
 
 
 
@@ -110,10 +117,10 @@
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: false,
+    motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -127,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/16/hexo-笔记/">
 
 
 
 
 
-  <title>MY BLOG</title>
+  <title>hexo-笔记 | MY BLOG</title>
   
 
 
@@ -151,16 +158,14 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -201,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            首页
+            Home
           </a>
         </li>
       
@@ -211,7 +216,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -221,7 +226,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -231,7 +236,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -253,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/解决Sublime的Package-Control被墙/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/hexo-笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="QikaiXu">
@@ -285,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/16/解决Sublime的Package-Control被墙/" itemprop="url">解决Sublime的Package Control被墙</a></h1>
+          <h1 class="post-title" itemprop="name headline">hexo-笔记</h1>
         
 
         <div class="post-meta">
@@ -297,9 +300,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T20:55:25+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-16T17:29:13+08:00">
                 2019-04-16
               </time>
             
@@ -337,46 +340,9 @@
       
 
       
-        
-          
-            <ol>
-<li><p>解决 Sublime 被墙导致的无法安装 Package Control</p>
-<p>在 hosts 文件最后加上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">50.116.34.243 sublime.wbond.net</span><br></pre></td></tr></table></figure>
-<p>关于 hosts 文件</p>
-<p>mac 下，点击桌面上方的“前往”-&gt;“前往文件夹”（或者快捷键 Shift+Command+G）  输入 /private/etc 按回车  就可以看到里面的hosts文件了。拖一份副本放到桌面，直接右键选择“文本编辑”打开，修改，拖拽回原位置，替换。</p>
-<p>引用自：<a href="https://www.cnblogs.com/xiaolu-web/p/4741527.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaolu-web/p/4741527.html</a></p>
-</li>
-<li><p>安装 Package Control</p>
-<ol>
-<li><p>mac 下 Control+` 打开控制台</p>
-</li>
-<li><p>复制粘贴以下代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib2,os; pf=<span class="string">'Package Control.sublime-package'</span>; ipp=sublime.installed_packages_path(); os.makedirs(ipp) <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(ipp) <span class="keyword">else</span> <span class="literal">None</span>; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),<span class="string">'wb'</span>).write(urllib2.urlopen(<span class="string">'http://sublime.wbond.net/'</span>+pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read()); <span class="keyword">print</span> <span class="string">'Please restart Sublime Text to finish installation'</span></span><br></pre></td></tr></table></figure>
-<p>回车，等待完成</p>
-</li>
-</ol>
-</li>
-<li><p>解决Package Control 被墙导致的无法安装插件</p>
-<ol>
-<li>打开 Sublime Text &gt; Preferences &gt; Package Settings &gt; Package Control &gt; Settings - User</li>
-</ol>
-<p><img src="/2019/04/16/解决Sublime的Package-Control被墙/image-20190416201504858.png" alt="image-20190416201504858"></p>
-<ol start="2">
-<li><p>在文件下添加</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"channels"</span>:</span><br><span class="line">[</span><br><span class="line">    <span class="string">"http://cst.stu.126.net/u/json/cms/channel_v3.json"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-<p>如图</p>
-<p><img src="/2019/04/16/解决Sublime的Package-Control被墙/QQ20190416-204740.png" alt="QQ20190416-204740"></p>
-</li>
-</ol>
-</li>
-<li><p>然后就可以愉快玩耍啦</p>
-<p>mac 下可以通过 Command+Shift+P 输入 install 来安装插件</p>
-</li>
-</ol>
+        <p>1123123</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">a.forEach(<span class="function"><span class="params">b</span> =&gt;</span> <span class="built_in">console</span>.log(b));</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -391,14 +357,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/13/解决Sublime的Package-Control被墙/" rel="next" title="解决Sublime的Package Control被墙">
+                <i class="fa fa-chevron-left"></i> 解决Sublime的Package Control被墙
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -408,10 +396,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -419,6 +408,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -453,8 +446,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -465,10 +458,10 @@
             
             
             <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
+              
             </div>
           
 
@@ -517,11 +510,11 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
@@ -604,10 +597,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

@@ -94,7 +94,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="MY BLOG">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/Sublime/index.html">
 <meta property="og:site_name" content="MY BLOG">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/tags/Sublime/">
 
 
 
 
 
-  <title>MY BLOG</title>
+  <title>标签: Sublime | MY BLOG</title>
   
 
 
@@ -158,9 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,163 +251,51 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block tag">
+
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>Sublime<small>标签</small>
+        </h1>
+      </div>
+
       
-
-  
-
-  
-  
-  
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/解决Sublime的Package-Control被墙/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="QikaiXu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MY BLOG">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/16/解决Sublime的Package-Control被墙/" itemprop="url">解决Sublime的Package Control被墙</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2019/04/16/解决Sublime的Package-Control被墙/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">解决Sublime的Package Control被墙</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T20:55:25+08:00">
-                2019-04-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
+            </a>
         
-          
-            <ol>
-<li><p>解决 Sublime 被墙导致的无法安装 Package Control</p>
-<p>在 hosts 文件最后加上</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">50.116.34.243 sublime.wbond.net</span><br></pre></td></tr></table></figure>
-<p>关于 hosts 文件</p>
-<p>mac 下，点击桌面上方的“前往”-&gt;“前往文件夹”（或者快捷键 Shift+Command+G）  输入 /private/etc 按回车  就可以看到里面的hosts文件了。拖一份副本放到桌面，直接右键选择“文本编辑”打开，修改，拖拽回原位置，替换。</p>
-<p>引用自：<a href="https://www.cnblogs.com/xiaolu-web/p/4741527.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaolu-web/p/4741527.html</a></p>
-</li>
-<li><p>安装 Package Control</p>
-<ol>
-<li><p>mac 下 Control+` 打开控制台</p>
-</li>
-<li><p>复制粘贴以下代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib2,os; pf=<span class="string">'Package Control.sublime-package'</span>; ipp=sublime.installed_packages_path(); os.makedirs(ipp) <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(ipp) <span class="keyword">else</span> <span class="literal">None</span>; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),<span class="string">'wb'</span>).write(urllib2.urlopen(<span class="string">'http://sublime.wbond.net/'</span>+pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read()); <span class="keyword">print</span> <span class="string">'Please restart Sublime Text to finish installation'</span></span><br></pre></td></tr></table></figure>
-<p>回车，等待完成</p>
-</li>
-</ol>
-</li>
-<li><p>解决Package Control 被墙导致的无法安装插件</p>
-<ol>
-<li>打开 Sublime Text &gt; Preferences &gt; Package Settings &gt; Package Control &gt; Settings - User</li>
-</ol>
-<p><img src="/2019/04/16/解决Sublime的Package-Control被墙/image-20190416201504858.png" alt="image-20190416201504858"></p>
-<ol start="2">
-<li><p>在文件下添加</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"channels"</span>:</span><br><span class="line">[</span><br><span class="line">    <span class="string">"http://cst.stu.126.net/u/json/cms/channel_v3.json"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-<p>如图</p>
-<p><img src="/2019/04/16/解决Sublime的Package-Control被墙/QQ20190416-204740.png" alt="QQ20190416-204740"></p>
-</li>
-</ol>
-</li>
-<li><p>然后就可以愉快玩耍啦</p>
-<p>mac 下可以通过 Command+Shift+P 输入 install 来安装插件</p>
-</li>
-</ol>
+      </h2>
 
-          
-        
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-16T20:55:25+08:00" content="2019-04-16">
+          04-16
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-  </section>
 
   
 
